@@ -14,20 +14,13 @@ yarn
 This will deploy the contracts deterministically and verify the contracts on etherscan using [Solidity 0.7.6](https://github.com/ethereum/solidity/releases/tag/v0.7.6) by default.
 
 
-```bash
-npx truffle migrate --network testnet  -f 2 --to 6
-```
+## Install Dependencies
 
-This will perform the following steps
+`yarn install`
 
-```bash
-# Deploy
-npx truffle migrate --network testnet  -f 1 --to 1
-# Deploy token test
-npx truffle migrate --network testnet  -f 9 --to 9
-# Transfer token test to SafeContract
-npx truffle migrate --network testnet  -f 8 --to 8
-```
+## Compile Contracts
+
+`yarn compile`
 
 
 Documentation

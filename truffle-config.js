@@ -18,15 +18,18 @@
  *
  */
 
+
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+require('dotenv').config();
 var PrivateKeyProvider = require("truffle-privatekey-provider");
-
-var privateKey = "b901067b43c63bdb5c5f6318a9270416b997085d6dee528893108d445bab91fe";
+var privateKey = process.env.privateKey;
 
 module.exports = {
+    
+    
     /**
      * Networks define how you connect to your ethereum client and let you set the
      * defaults web3 uses to send transactions. If you don't specify one truffle
